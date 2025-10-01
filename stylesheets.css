@@ -1,7 +1,118 @@
 body {
     background-image: url(assets/background.png);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-.header{
+.name{
+    padding-top: 200px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 100px;
+    color: #F5F3EE;
+}
+#intro{
+    padding-top: 2px;
+    padding-left: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#options1{
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.gridItem{
+    color: #0f0e0e;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: 500;
+    border-color: transparent;
+    cursor: pointer;
+    padding : 32px;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.currentlyActive{
+    color: #F5F3EE;
+    background-color: #234E70;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.gridItem:hover {
+  color: #F5F3EE;
+  background-color: #E97451;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.gridItem:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.highlight{
+    color:#E97451;
+    font-weight: 800;
+    text-shadow: 2px 2px 3px black;
+} 
+footer {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d1e20;
+  color: white;
+  border-color: #42769e;
+  border-width: 4px;
+  border-top-style: solid;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  align-items: center;
+}
+.footerText {
+  align-items: left;
+  padding-left: 40px;
+}
+.footerText li{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footerText a{
+    text-decoration: none;
+    color: white;
+}
+.footerText a:hover{
+    color: #E97451;
+    text-decoration: underline;
+}
+.footerText p{
+    padding-top: 20px;
+    padding-left: 18px;
+    font-size: 15px;
+}
+.footerLogo{
+    align-items: center;
+    padding-right: 10px;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 40px;
+    height: 200px;
+    width: auto;
+}
+#mainContent{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 150px;
+    padding-top: 20px;
+    color: #050504;
     font-size: 30px;
+    line-height: 1.6;
 }
